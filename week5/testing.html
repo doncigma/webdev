@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <script src="https:://cdn.tailwindcss.com"></script>
+        <script>
+            console.log('Starting...')
+            const balert = function(x) {
+                alert(x);
+            }
+            const addsTen = function(x) {
+                return x + 10;
+                document.getElementById("result").innerHTML = total;
+            }
+            const changeColor = function() {
+                let result = document.getElementById("result");
+                result.classList.remove('text-red-500');
+                result.classList.add('text-blue-500');
+            }
+        </script>
+        <style>
+            .btn {
+                padding: 10px;
+                background-color: blue;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <button class="btn" onClick="balert('Hi!')">Say Hi!</button>
+            <button class="btn" onClick="balert('Goodbye!')">Say Goodbye</button>
+        </div>
+        <hr>
+        <button class="btn" onClick="addsTen(100)">Add 10</button>
+        <button class="btn" onClick="changeColor()">Change Color</button>
+        <div id="result" class="text-5xl test-red-500"></div>
+    </body>
+</html>
