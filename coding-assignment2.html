@@ -2,12 +2,6 @@
 
 <html>
     <head>
-        <style>
-            .btn {
-                border
-            }
-        </style>
-
         <script>
             window.onload = function () {
                 console.log('Starting...');
@@ -20,10 +14,17 @@
                 interactiveDiv.textContent = input;
             }
         </script>
+
+        <style>
+            .btn {
+                background-color: black;
+                color: white;
+            }
+        </style>
     </head>
 
     <body>
-        <div id="interactiveDiv" class="btn" onclick="changeText('')">
+        <div id="interactiveDiv" class="btn" onclick="changeText()">
             Click me
         </div>
     </body>
