@@ -1,11 +1,11 @@
 <html>
     <head>
-        <script src="https:://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
     </head>
-    <body>
+    <body class="min-h-screen">
         <header class="bg-gray-900">
             <nav class="flex flex-row justify-between items-center max-w-screen-lg mx-auto">
-            <div id="logo"> <img src="logo.svg"/> </div>
+            <div id="logo"> <img src="logo.svg" class="text-white"/> </div>
             <div class="flex-grow flex flex-row justify-around w-full text-xs text-white">
                 <a href="#">
                     Store
@@ -38,8 +38,21 @@
                     Support
                 </a>
             </div>
-
+            <div id="icons" class="flex flex-row gap-4">
+                <img src="search.svg"/>
+                <img src="cart.svg"/>
+            </div>
             </nav>
         </header>
+        <main class="bg-cover min-h-full" style="background-image: url('iphone15.jpg')">
+            <div class="text-white text-center pt-16 tracking-tighter">
+                <h1 class="text-6xl font-semibold">iPhone 15 Pro</h1>
+                <div class="text-3xl tracking-tight pt-2">Titanium. So strong. So light. So Pro.</div>
+                <div class="text-xl pt-4 flex flex-row gap-4 justify-center text-blue-400">
+                    <a href="#" class="hover:underline">Learn More ></a>
+                    <a href="#" class="hover:underline">Buy ></a>
+                </div>
+            </div>
+        </main>
     </body>
 </html>
