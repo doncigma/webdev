@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script>
+            window.onload = function () {
+                console.log('Starting...');
+            }
+
+            const changeText = function() {
+                let interactiveDiv = document.getElementById('interactiveDiv');
+                let input = prompt('Enter some text: ')
+                
+                interactiveDiv.textContent = input;
+            }
+        </script>
+    </head>
+
+    <body>
+        <div id="interactiveDiv" onclick="changeText('')">
+            Click me
+        </div>
+    </body>
+</html>
